@@ -1,0 +1,16 @@
+schema {
+  query: Root
+}
+
+type Root {
+  viewer(query: String = ""): Viewer
+}
+
+type Viewer {
+  searchWidgets(query: String = "bicycle"): [Widget]
+}
+
+type Widget {
+  myId: Int
+  myName: String
+}
