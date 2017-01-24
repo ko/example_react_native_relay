@@ -1,0 +1,17 @@
+{
+  "scripts": {
+    "start": "node index.js",
+    "updateSchema": "node scripts/updateSchemaJson.js",
+    "copySchema": "cp data/schema.* ../client/data/"
+  },
+  "dependencies": {
+    "babel": "^6.5.2",
+    "babel-cli": "^6.18.0",
+    "babel-preset-latest": "^6.22.0",
+    "babel-register": "^6.22.0",
+    "express": "^4.14.0",
+    "express-graphql": "^0.6.1",
+    "graphql": "^0.8.2",
+    "graphql-relay": "^0.4.4"
+  }
+}
